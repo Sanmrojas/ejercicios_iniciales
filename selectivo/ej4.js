@@ -1,3 +1,5 @@
+const leer = require("prompt-sync")();
+
 //pueda multiplicar o dividir dos números dependiendo del usuario
 
 let num1 = 0;
@@ -12,10 +14,10 @@ num2 = Number(leer());
 console.log("Quieres multiplicar (M) o dividir (D) los números?");
 respuestaUsuario = leer();
 
-if (respuestaUsuario == "*") {
+if (respuestaUsuario == "M") {
     console.log(" El resultado de la multiplicación es", resultado = num1 * num2);
 
-} if (respuestaUsuario == "/") {
+} if (respuestaUsuario == "D") {
     console.log(" El resultado de la división es", resultado = num1 / num2);
 }
 
